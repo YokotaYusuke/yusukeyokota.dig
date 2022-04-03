@@ -1,90 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>yoito</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+    <h1>よいと</h1>
+    <h2>生活雑貨と、おいしい珈琲と。</h2>
+    <div class="headerTag">
+      <ul>
+        <li>Home</li>
+        <li>Product</li>
+        <li>Help</li>
+      </ul>
     </div>
   </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+
+  <main>
+    <ul class="contents">
+      <li class="animationTarget">
+        <img src="img/yoito2.png" alt="">
+        <div class="contentsText">
+          <h2>ドライフラワーパネル</h2>
+          <p>手作りの額にドライフラワーを標本風に貼り付け。
+            <br>全て1点物です。お好みのデザインをお選びください。
+            <br>creator:milwaukie
+          </p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+      </li>
+
+      <li class="animationTarget">
+        <img src="img/yoito11.png" alt="">
+        <div class="contentsText">
+          <h2>十和田コースター</h2>
+          <p>レストランなどで見かけるスレートプレート。
+            <br>チーズやサラダ、お肉などお好きな食べ物にのせるだけで、一気にお店の雰囲気に。
+            <br>creator:大島組
+          </p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+      </li>
+
+      <li class="animationTarget">
+        <img src="img/yoito3.png" alt="">
+        <div class="contentsText">
+          <h2>だるま</h2>
+          <p>多種多彩なデザインでポップで楽しいだるまです。
+            <br>人気商品ですので、お早めにどうぞ。
+            <br>creator:山口さくら
+          </p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+      </li>
+
+      <li class="animationTarget">
+        <img src="img/yoito7.png" alt="">
+        <div class="contentsText">
+          <h2>苔玉</h2>
+          <p>現在ブームにもなっている苔玉です。
+            <br>ご自宅のインテリアグリーンにお一ついかがでしょうか。
+          </p>
         </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
+      </li>
+    </ul>
+  </main>
+
   <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
+    <div class="footer-logo">yoito</div>
+    <ul>
+      <li>会社概要</li>
+      <li>株式会社シティリンクス</li>
+      <li>〒389-0102</li>
+      <li>長野県北佐久郡軽井沢601-1チャーチストリート軽井沢</li>
+    </ul>
   </footer>
+
 </body>
 </html>
