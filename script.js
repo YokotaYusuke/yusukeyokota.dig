@@ -31,7 +31,7 @@ function picChange() {
   //画像選択
   pic.src = img[count];
   //1秒ごとに実行
-  setTimeout("picChange()", 000);
+  setTimeout("picChange()", 5000);
 }
 
 
