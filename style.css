@@ -198,12 +198,14 @@ footer {
   /* position: absolute; */
   padding: 20px;
   font-size: 25px;
+  color: rgba(49, 34, 7, 0.755);
+  font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  /* font-weight: bold; */
 }
 
 .footer-list {
   text-align: right;
 }
-
 
 
 .modal-wrapper.show {
@@ -215,4 +217,25 @@ footer {
 .imgZoom {
   font-size: 10px;
   text-align: right;
+}
+
+.help-container {
+  padding: 10px;
+}
+
+.help-title {
+  /* background-color: blue; */
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.help-item li{
+  padding: 10px 10px 10px 20px;
+  /* background-color: blueviolet; */
+}
+
+.help-map {
+  padding: 30px;
 }
