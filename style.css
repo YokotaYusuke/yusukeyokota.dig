@@ -171,28 +171,48 @@ main .contents li.show img {
 
 
 footer {
-  border-top: solid 1.5px;
-  position: relative;
-  text-align: center;
-  color: white;
-  background-color: rgba(62, 59, 59, 0.6);
-  padding: 40px;
+  /* border-top: solid 1.5px; */
+  /* position: relative; */
+  /* text-align: center; */
+  background-color: rgba(202, 209, 199, 0.164);
+  padding: 10px;
+  height: 110px;
 }
 
-#tag1,#tag2,#tag3 {
-  cursor: pointer;
+.headerTag li:hover {
+  /* background-color: gray; */
+  opacity: 0.3;
 }
 
 .scroll {
   text-align: center;
-  /* padding-bottom: 70px; */
+  padding-bottom: 70px;
   color: gray;
   font-size: 20px;
 }
 
 
-.aaa {
-    padding-bottom: 70px;
+.footer-logo {
+    /* padding-bottom: 70px; */
+  text-align: left;
+  /* position: absolute; */
+  padding: 20px;
+  font-size: 25px;
+}
+
+.footer-list {
+  text-align: right;
 }
 
 
+
+.modal-wrapper.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.imgZoom {
+  font-size: 10px;
+  text-align: right;
+}
