@@ -1,3 +1,6 @@
+'use strict';
+
+// Productの画像をふわっと動かす
 const targetElement = document.querySelectorAll(".animationTarget");
 
 // console.log("画面の高さ", window.innerHeight);
@@ -13,39 +16,23 @@ document.addEventListener("scroll", function() {
 });
 
 
+// Homeの画像を1秒ずつ切り替える
+const img = ["img/yoito15-2.png", "img/yoito23-2.png", "img/yoito1-2.png"];
 
-// 追加
-// ---------------------------------------------------------------------------------
-// 画像クリックで拡大できるライブラリ「Medium Zoom」・・・アニメーションへ干渉してしまう。上手くいかない断念
+let count = -1;
 
-// mediumZoom(document.querySelectorAll(".mordal-image > img"), {
-// 	margin: 24,
-// 	background: '#292d3d',
-// 	scrollOffset: 0,
-// });
+picChange();
 
-// mediumZoom('[data-zoomable]')
+function picChange() {
 
-// ---------------------------------------------------------------------------------
-// 画像を拡大してモーダルダイアログにポップアップ表示させる「Lightbox2」
-// --->上手くいった！
-
-// ---------------------------------------------------------------------------------
-
-// function alertImage() {
-//   window.alert("hello");
-//   document.getElementsByClassName("mordal-image")[0].height = 100; 
-//   document.getElementsByClassName("mordal-image")[0].width = auto; 
-// }
-
-// const target = document.querySelectorAll(".mordal-image")[0];
-
-
-
-// target.addEventListener("click", alertImage);
-
-
-// ---------------------------------------------------------------------------------
+  count++;
+  // カウントが最大になれば初期値に戻す
+  if (count == img.length) count = 0;
+  //画像選択
+  pic.src = img[count];
+  //1秒ごとに実行
+  setTimeout("picChange()", 7000);
+}
 
 
 
