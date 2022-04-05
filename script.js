@@ -30,10 +30,19 @@ function picChange() {
   if (count == img.length) count = 0;
   //画像選択
   pic.src = img[count];
-  //1秒ごとに実行
+  // 1秒ごとに実行
   setTimeout("picChange()", 5000);
 }
 
+
+// Scroll消す(作成途中です。)
+
+// const scrollTaget = document.querySelectorAll(".scroll")[0];
+// scrollTaget.addEventListener("scroll", deleteScroll);
+
+// function deleteScroll(word) {
+//   return word.innerHTML = "";
+// }
 
 
 
